@@ -2,9 +2,51 @@
     color: #202020;
 }
 
-.bodytxt {
-    font-family: 'ITC Franklin Gothic', sans;
-    font-weight: 200;
+.red {
+    color: #AA553E;
 }
+
+.yellow {
+    color: #FCDA00;
+}
+
+.concrete {
+    color: #CBCDC6;
+}
+
+.beige {
+    color: #D3BD9D;
+}
+
+.blue {
+    color: #0B3C5D;
+}
+
+.orange {
+    color: #F2AB3C;
+}
+
+.headertxt {
+     font-family: 'Helvetica neue LT Pro', sans-serif;
+     font-weight: bold;
+     font-size: 96px;
+}
+
+.subheadertxt {
+    font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.bodytxt {
+    font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.accenttxt {
+    font-family: 'GFS Didot', serif;
+    font-weight: 400c   ;
+} 
 
 /* and so on...*/
