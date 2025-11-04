@@ -7,4 +7,19 @@
     font-weight: 200;
 }
 
+.list-bttn {
+    width: 285.10211181640625px;
+    height: 77.7096939086914px;
+    font-family: 'ITC Franklin Gothic LT Pro';
+    font-weight: 600;
+    font-style: 'demi';
+    font-size: 32.48px;
+    letter-spacing: 10%;
+    align-content: center;
+    color: rgba(32, 32, 32, 1);
+}
+
+
+
+
 /* and so on...*/
