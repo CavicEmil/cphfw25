@@ -32,6 +32,11 @@
      font-size: 96px;
 }
 
+/* remove browser default body margin so header elements can reach the page edges */
+body {
+  margin: 0;
+}
+
 .subheadertxt {
     font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
     font-weight: 700;
@@ -50,3 +55,142 @@
 } 
 
 /* and so on...*/
+.header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* reduce right padding so the right-side text sits a little closer to the page edge
+    and increase top padding so the entire header sits lower on the page */
+  padding: 40px 2.5% 20px 0;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* Center header-center absolutely on wide screens so the nav sits in the exact middle */
+@media (min-width: 900px) {
+  .header-center {
+    position: absolute;
+    left: 50%;
+    /* move the centered nav down a bit so it's visible */
+    transform: translateX(-50%) translateY(20px);
+    z-index: 1;
+  }
+}
+
+/* LEFT LOGO */
+.logo {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.header-center {
+  display: grid;
+  /* 2 columns x auto rows to create a 2x2 layout for the 4 nav items */
+  grid-template-columns: repeat(2, max-content);
+  grid-auto-rows: auto;
+  /* tighten spacing so the circular images sit closer together */
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  /* allow the grid to shrink and center inside the header */
+  min-width: 0;
+  margin: 0 auto;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 15px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 25px 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  /* slightly reduce image-to-text gap to keep things compact */
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.nav-item img {
+  /* a touch smaller so the circles visually pack closer */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
+}
+
+/* Put the label to the left of the icon for specific nav items */
+.header-center a.nav-item[href="#runways"],
+.header-center a.nav-item[href="#boutiques"] {
+  /* reverse order so the text appears left of the image */
+  flex-direction: row-reverse;
+  /* ensure spacing remains consistent */
+  gap: 12px;
+}
+
+
+.header-right p {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  color: #202020
+}
+
+/* Nudge logo and right-side text slightly upward on larger screens */
+@media (min-width: 600px) {
+  .header-left .logo,
+  .header-right {
+    /* increased nudge to move elements more toward the top */
+    /* moved slightly further up */
+    transform: translateY(-36px);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .logo {
+    max-height: 60px;
+  }
+}
