@@ -1,0 +1,82 @@
+.toprow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+.bottomrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+video {
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* this is just to chek code */
+
+/* LEFT LOGO */
+.logo {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.headertxt {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    text-align: right;
+}
+
+
+header {
+    background-color: white;
+    padding: 2px 0; /* Adjust padding to make the white block thinner */
+    width: 100%;
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 0 0; /* Optional padding for left and right */;
+
+}
+
+
+
+
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 10px; /* Minimal horizontal padding */
+    box-sizing: border-box;
+}
