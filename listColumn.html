@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header>
+    </header>
+   
+   
+    <div class="fltrContainer">
+    <span class="dateFilter">Date <img src="util/vectorArrowDown.svg" id="dropdown-date" onclick="toggleDropdown('dropdown-date')"> </span>
+    <span class="nameFilter">Name <img src="util/vectorArrowDown.svg" id="dropdown-name" onclick="toggleDropdown('dropdown-name')"> </span>
+    <span class="brandFilter">Brand <img src="util/vectorArrowDown.svg" id="dropdown-brand" onclick="toggleDropdown('dropdown-brand')"> </span>
+</div>
+
+
+<script>
+
+function toggleDropdown(id) {
+  const dropdownContent = document.getElementById(dropdownId);
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+}
+
+</script>
+
+
+
+
+</body>
+</html>

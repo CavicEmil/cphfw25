@@ -7,19 +7,63 @@
     font-weight: 200;
 }
 
-.list-bttn {
-    width: 285.10211181640625px;
-    height: 77.7096939086914px;
-    font-family: 'ITC Franklin Gothic LT Pro';
-    font-weight: 600;
-    font-style: 'demi';
-    font-size: 32.48px;
-    letter-spacing: 10%;
-    align-content: center;
-    color: rgba(32, 32, 32, 1);
+.dateFilter {
+    font-family: Arial, sans-serif;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    align-items: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 15px;
+
 }
 
+.nameFilter {
+    font-family: Arial, sans-serif;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    align-items: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 15px;
+}
 
+.brandFilter {
+    font-family: Arial, sans-serif;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    align-items: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 15px;
+}
 
+.fltrContainer {
+    background-color: rgba(0, 0, 0, 1);
+    width: 496px;
+    height: 36px;
+    border-radius: 10px;
+    top: 0.43px;
+    direction: ltr;
+    writing-mode: horizontal-tb;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 10px;
+    row-gap: 10px;
+    justify-content: space-around;
+    padding: 8px 16px;
+    align-items: center;
+    box-sizing: border-box;
+}
 
 /* and so on...*/
