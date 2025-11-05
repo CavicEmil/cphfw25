@@ -1,0 +1,62 @@
+.dateFilter, .nameFilter, .brandFilter {
+    font-family: Arial, sans-serif;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    align-items: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+
+.fltrContainer {
+    background-color: rgba(0, 0, 0, 1);
+    width: 496px;
+    height: 36px;
+    border-radius: 20px;
+    top: 0.43px;
+    direction: ltr;
+    writing-mode: horizontal-tb;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 10px;
+    row-gap: 10px;
+    justify-content: space-around;
+    padding: 8px 16px;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+    z-index: 1;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdownOption {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdownOption:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
