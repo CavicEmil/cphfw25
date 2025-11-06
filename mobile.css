@@ -13,6 +13,8 @@ a, a:visited, a:hover, a:active {
     font-weight: 700;
 }
 
+/* meventlist classes*/
+
 .tophead {
     display: flex;
     flex-direction: row;
@@ -21,20 +23,80 @@ a, a:visited, a:hover, a:active {
 }
 
 .mlogo {
-    width: 40%;
+    width: 50%;
     height:auto;
     cursor: pointer;
 }
 
 .searchsymbol {
-    width:15%; 
+    width:10%; 
     cursor: pointer;
 }
 
 .filters {
-    
+    margin: 20px 0;
+    font-family: "ITC Franklin Gothic", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10%;
 }
 
+.filters svg {
+    width: 25%;
+    height: auto;
+}
+
+.filters path {
+    stroke: #202020;
+    stroke-width: 20%; 
+}
+
+.filtercategory {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.listview {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 30px 25px 30px;
+}
+
+.listitem {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 32px;
+    font-family: 'ITC Franklin Gothic LT Pro';
+    font-weight: 400;
+}
+
+.listitem p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.listitem svg {
+    width: 5%;
+    height: auto;
+}
+
+.listitem path {
+    stroke: #202020;
+    stroke-width: 20%; 
+}
+
+/*moverview classes */
 .eventcard {
     position: relative;
     margin: 1px 0;
