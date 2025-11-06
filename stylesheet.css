@@ -95,7 +95,7 @@ body {
   align-items: center;
   min-width: 0;
   margin: 0 auto;
-}
+}3
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
