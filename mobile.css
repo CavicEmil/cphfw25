@@ -1,0 +1,55 @@
+.white {
+    color: #fff;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.subheader {
+    font-size: 32px;
+    font-family: 'ITC Franklin Gothic LT Pro';
+    font-weight: 700;
+}
+
+.tophead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 25px 0 25px;
+}
+
+.mlogo {
+    width: 40%;
+    height:auto;
+    cursor: pointer;
+}
+
+.searchsymbol {
+    width:15%; 
+    cursor: pointer;
+}
+
+.filters {
+    
+}
+
+.eventcard {
+    position: relative;
+    margin: 1px 0;
+}
+
+.eventcard img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.eventdescription {
+    margin: 0 20px;
+    position: absolute;
+    bottom: 15px;
+}
+

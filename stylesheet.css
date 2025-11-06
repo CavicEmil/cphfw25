@@ -2,68 +2,181 @@
     color: #202020;
 }
 
+.red {
+    color: #AA553E;
+}
+
+.yellow {
+    color: #FCDA00;
+}
+
+.concrete {
+    color: #CBCDC6;
+}
+
+.beige {
+    color: #D3BD9D;
+}
+
+.blue {
+    color: #0B3C5D;
+}
+
+.orange {
+    color: #F2AB3C;
+}
+
+.headertxt {
+     font-family: 'Helvetica neue LT Pro', sans-serif;
+     font-weight: bold;
+     font-size: 96px;
+}
+
+/* remove browser default body margin so header elements can reach the page edges */
+body {
+  margin: 0;
+}
+
+.subheadertxt {
+    font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
 .bodytxt {
-    font-family: 'ITC Franklin Gothic', sans;
+    font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
     font-weight: 200;
+    font-size: 18px;
 }
 
-.dateFilter {
-    font-family: Arial, sans-serif;
-    font-weight: 450;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    align-items: center;
-    vertical-align: middle;
-    color: rgba(255, 255, 255, 1);
-    display: flex;
+.accenttxt {
+    font-family: 'GFS Didot', serif;
+    font-weight: 400;
+} 
+
+.header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 2.5% 20px 0;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+  .header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    z-index: 1;
+  }
+}
+
+.header-left {
+    margin-left: 30px;
+    height: 30px;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+}
+
+
+.header-center {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-auto-rows: auto;
+  
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 15px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 25px 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.nav-item img {
+  width: clamp(36px, 7vw, 60px);
+  height: clamp(36px, 7vw, 60px);
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
+}
+.header-center a.nav-item[href="#runways"],
+.header-center a.nav-item[href="#boutiques"] {
+  flex-direction: row-reverse;
+  gap: 12px;
+}
+
+
+.header-right p {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  color: #202020
+}
+
+/* 
+@media (min-width: 600px) {
+  .header-left .logo,
+  .header-right {
+
+    transform: translateY(-36px);
+  }
+} */
+
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
     gap: 15px;
+  }
 
+  .nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    gap: 6px;
+  }
 }
-
-.nameFilter {
-    font-family: Arial, sans-serif;
-    font-weight: 450;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    align-items: center;
-    vertical-align: middle;
-    color: rgba(255, 255, 255, 1);
-    display: flex;
-    gap: 15px;
-}
-
-.brandFilter {
-    font-family: Arial, sans-serif;
-    font-weight: 450;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    align-items: center;
-    vertical-align: middle;
-    color: rgba(255, 255, 255, 1);
-    display: flex;
-    gap: 15px;
-}
-
-.fltrContainer {
-    background-color: rgba(0, 0, 0, 1);
-    width: 496px;
-    height: 36px;
-    border-radius: 10px;
-    top: 0.43px;
-    direction: ltr;
-    writing-mode: horizontal-tb;
-    display: flex;
-    flex-direction: row;
-    white-space: nowrap;
-    gap: 10px;
-    row-gap: 10px;
-    justify-content: space-around;
-    padding: 8px 16px;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-/* and so on...*/
