@@ -54,7 +54,6 @@ body {
     font-weight: 400;
 } 
 
-/* and so on...*/
 .header {
   width: 100%;
   position: relative;
@@ -79,11 +78,14 @@ body {
   }
 }
 
-/* LEFT LOGO */
+.header-left {
+    margin-left: 30px;
+    height: 30px;
+}
+
 .logo {
-  max-height: 80px;
+  height: 30px;
   width: auto;
-  object-fit: contain;
 }
 
 
@@ -162,15 +164,14 @@ body {
   color: #202020
 }
 
-/* Nudge logo and right-side text slightly upward on larger screens */
+/* 
 @media (min-width: 600px) {
   .header-left .logo,
   .header-right {
-    /* increased nudge to move elements more toward the top */
-    /* moved slightly further up */
+
     transform: translateY(-36px);
   }
-}
+} */
 
 
 @media (max-width: 900px) {
@@ -188,9 +189,5 @@ body {
   .nav-item {
     flex-direction: column;
     gap: 6px;
-  }
-
-  .logo {
-    max-height: 60px;
   }
 }
