@@ -1,4 +1,8 @@
-.toprow {
+
+
+/* top and bottom row that has 2 videos 2 buttons in it */
+
+.toprow {  /* this is the top row style */
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -8,20 +12,19 @@
     padding: 0;
 
 }
+/* this is video style for bottom row */
 .bottomrow {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    /* i deleted justify content */
     max-width: 100%;
     margin: 0;
     padding: 0;
 
 }
-video {
-    flex: 1 1 50%;
-    max-width: 50%;
-}
+
+
 
 html, body {
   margin: 0;
@@ -29,29 +32,37 @@ html, body {
   box-sizing: border-box;
 }
 
-/* this is just to chek code */
+/* this is the styling for the header part
 
-/* LEFT LOGO */
+/* LEFT LOGO CPHFW */
 .logo {
   max-height: 80px;
   width: auto;
   object-fit: contain;
 }
 
+/* This is for the thext on the right side */
+
 .headertxt {
     font-size: 40px;
     font-weight: normal;
     font-family: ITC Franklin Gothic LT Pro, sans-serif; 
     text-align: right;
+    margin-right: 20px;
+    padding: 0;
 }
 
+/* this changes the header text box */
 
 header {
     background-color: white;
     padding: 2px 0; /* Adjust padding to make the white block thinner */
-    width: 100%;
+    max-width: 100%;
     margin: 0;
+
 }
+
+/* This is for the whole header logo, text and all */
 
 .header-content {
     display: flex;
@@ -60,23 +71,138 @@ header {
     align-items: center;
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Adjust max-width as needed */
     margin: 0 auto;
-    padding: 0 0; /* Optional padding for left and right */;
-
-}
-
-
-
-
-
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0 10px; /* Minimal horizontal padding */
+    padding: 0 10px; /* Optional padding for left and right */;
     box-sizing: border-box;
+
 }
+
+/* buttons from now on */
+
+
+.runwaybtn {
+
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 10px 20px;
+    z-index: 10; /* Ensures the button is above the video */
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+    
+}
+
+.socialsbtn {
+
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 10px 20px;
+    z-index: 10; /* Ensures the button is above the video */
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+    
+    
+}
+
+.boutiquesbtn {
+
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 10px 20px;
+    z-index: 10; /* Ensures the button is above the video */
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+    
+}
+
+
+
+.publicviewingbtn {
+
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 10px 20px;
+    z-index: 10; /* Ensures the button is above the video */
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+    
+}
+
+
+/* this is a section for combined button and video, each viedo and button has it's own section like
+ this but their class is the same so you only need to make changes in one place which is here...*/
+
+.videoandbtn {
+
+    position: relative;
+    flex: 1; /*added this flex thing here */ 
+    max-width: 50%; 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* video part and style */
+
+.videorunway { /* made this section for the runway video only*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.videosocials { /* made this section for the socials video only*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.videoboutiques { /* made this section for the boutiques video only*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.videopublicviewings { /* made this section for the public viewings video only*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* this is for a general section video. Each video has a Tag <video> so that is what this style is for */
+video {
+    display: block;
+    flex: 1 1 50%;
+    max-width: 100%; 
+}
+
