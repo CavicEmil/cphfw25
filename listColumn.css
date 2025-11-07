@@ -17,8 +17,9 @@
     background-color: rgba(0, 0, 0, 1);
     width: 496px;
     height: 36px;
-    border-radius: 20px;
-    top: 0.43px;
+    border-radius: 10px;
+    top: 45px;
+    left: 10px;
     direction: ltr;
     writing-mode: horizontal-tb;
     display: flex;
@@ -65,12 +66,12 @@
 }
 
 .bckBttn {
-    top: -7.5px;
-    left: 10px;
+    top: 30px;
+    left: 22px;
     cursor: pointer;
     position: relative;
-    width: 89px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 
 .eventOptions {
@@ -81,8 +82,8 @@
     overflow: hidden;
     width: 482px;
     position: relative;
-    margin-left: 7px;
-    top: 24px;
+    margin-left: 17px;
+    top: 70px;
 }
 
 .eventOptionsLine {
@@ -103,7 +104,7 @@
 
 
 .optionBoxDT {
-    font-weight: 600;
+    font-weight: 670;
     margin-right: 15px;
     min-width: 100px;
     color: #202020;
@@ -125,7 +126,7 @@
     box-sizing: border-box;
     color: rgba(32, 32, 32, 1)0;
     text-align: center;
-    margin-left: 16px;
+    margin-left: 0px;
     font-weight:bolder;
     font-size: 33px;
     line-height: 100%;
