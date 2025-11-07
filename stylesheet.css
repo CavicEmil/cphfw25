@@ -1,3 +1,8 @@
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .black {
     color: #202020;
 }
@@ -32,7 +37,7 @@
      font-size: 96px;
 }
 
-/* remove browser default body margin so header elements can reach the page edges */
+
 body {
   margin: 0;
 }
