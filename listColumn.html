@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="listColumn.css">
+</head>
+
+<body>
+    
+<div> <img src="util/Arrow left-circle.svg" id="backButton" class="bckBttn"> </div>
+
+<div class="fltrContainer">
+
+<div class="dropdown">
+    <span class="dateFilter" onclick="toggleDropdown('dropdownDate')"> Date <img src="util/vectorArrowDown.svg" id="dateImg"></span>
+        <div class="dropdownContent black bodytxt" id="dropdownDate"> 
+            <div class="dropdownOption"> 27.01 </div>
+            <div class="dropdownOption"> 28.01 </div>
+            <div class="dropdownOption"> 29.01 </div>
+            <div class="dropdownOption"> 27.02 </div>
+            <div class="dropdownOption"> 28.02 </div>
+            <div class="dropdownOption"> 29.02 </div>
+        </div>
+</div>    
+
+<div class="dropdown"> 
+    <span class="nameFilter" onclick="toggleDropdown('dropdownName')"> Name <img src="util/vectorArrowDown.svg" id="nameImg"></span>
+        <div class="dropdownContent" id="dropdownName"> 
+            <div class="dropdownOption"> Name 1 </div>
+            <div class="dropdownOption"> Name 2 </div>
+            <div class="dropdownOption"> Name 3 </div>
+            <div class="dropdownOption"> Name 4 </div>
+        </div>
+</div>
+    
+<div class="dropdown">
+    <span class="brandFilter" onclick="toggleDropdown('dropdownBrand')"> Brand <img src="util/vectorArrowDown.svg" id="brandImg"></span>
+        <div class="dropdownContent" id="dropdownBrand"> 
+            <div class="dropdownOption"> Ganni </div>
+            <div class="dropdownOption"> Marimekko </div>
+            <div class="dropdownOption"> Filippa K </div>
+            <div class="dropdownOption"> Han Kjøbenhavn </div>
+            <div class="dropdownOption"> Cecilie Bahnsen </div>
+            <div class="dropdownOption"> Kamo </div>
+            <div class="dropdownOption"> Gestuz </div>
+            <div class="dropdownOption"> Henrik Vibskov </div>
+            <div class="dropdownOption"> Munthe </div>
+            <div class="dropdownOption"> Taus </div>
+            <div class="dropdownOption"> Stine Goya </div>
+            <div class="dropdownOption"> Aiayu </div>
+            <div class="dropdownOption"> 66°North </div>
+        </div>
+</div>
+
+</div>
+
+
+<div class="eventOptions">
+    
+
+<div class="eventOptionsLine"> 
+    <div class="optionBoxDT"> 27.01 16:00 </div> 
+    <div class="optionBoxName"> Name of Event 1 </div> 
+</div>
+   
+   
+<div class="eventOptionsLine"> 
+    <div class="optionBoxDT"> 27.01 17:00 </div>  
+    <div class="optionBoxName"> Name of Event 2 </div> 
+</div> 
+   
+   
+<div class="eventOptionsLine"> 
+    <div class="optionBoxDT"> 27.01 18:00 </div> 
+    <div class="optionBoxName"> Name of Event 3 </div> 
+</div>
+   
+   
+<div class="eventOptionsLine"> 
+    <div class="optionBoxDT"> 27.01 19:00 </div> 
+    <div class="optionBoxName"> Name of Event 2 </div> 
+</div>
+   
+   
+<div class="eventOptionsLine"> 
+    <div class="optionBoxDT"> 27.01 20:00 </div> 
+    <div class="optionBoxName"> Name of Event 5 </div> 
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+    //This is for the dropdown menus
+    function toggleDropdown(dropdownId) {
+    console.log(dropdownId);
+      const dropdownContent = document.getElementById(dropdownId);
+      const isOpen = dropdownContent.style.display === 'block';
+        dropdownContent.style.display = 'block'
+    console.log(dropdownContent);
+
+    document.querySelectorAll('.dropdownContent').forEach(dropdown => {
+    dropdown.style.display = 'none';
+    });
+
+    
+      if (!isOpen) {
+        dropdownContent.style.display = 'block';
+      }
+    }
+
+    document.addEventListener('click', function(event) {
+    if (!event.target.closest('.fltrContainer')) {
+    document.querySelectorAll('.dropdownContent').forEach(dropdown => {
+    dropdown.style.display = 'none';
+    });
+    }
+    });
+
+
+//This is for selecting the events
+document.querySelectorAll('.eventOptionsLine').forEach(line => {
+  line.addEventListener('click', function() {
+    document.querySelectorAll('.eventOptionsLine').forEach(l => {
+      l.style.backgroundImage = 'none';
+      l.style.backgroundColor = '';
+      l.querySelector('.optionBoxDT').style.color = '#202020';
+      l.querySelector('.optionBoxName').style.color = '#202020';
+    });
+
+    this.style.backgroundImage = 'url(util/BackgroundColorVelvet.png)';
+    this.style.backgroundSize = 'cover';
+    this.style.backgroundPosition = 'center';
+    this.style.color = 'white';
+    this.querySelector('.optionBoxDT').style.color = 'white';
+    this.querySelector('.optionBoxName').style.color = 'white';
+  });
+});
+
+
+
+  </script>
+
+
+
+
+</body>
+</html>

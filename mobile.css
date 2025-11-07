@@ -1,0 +1,167 @@
+.white {
+    color: #fff;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.subheader {
+    font-size: 32px;
+    font-family: 'ITC Franklin Gothic LT Pro';
+    font-weight: 700;
+}
+
+.mapview {
+    margin-top:20px;
+    background: #D3BD9D;
+}
+
+/* mdetailview classes */
+.eventdetails {
+    background: #f0f0f0;
+    width: 100%;
+    min-height: 400px;
+    position:relative;
+}
+
+.cardview {
+    background: #fff;
+    position: absolute;
+    top: -40px;
+    margin: 0 20px 20px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    min-height: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.datetime {
+    font-weight: 700;
+}
+
+.adressinfo {
+    text-decoration: underline;
+}
+
+.ctabtn {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    text-align: center;
+    background-image: url('/util/BackgroundColorVelvet.png');
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+/* meventlist classes*/
+
+.tophead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 25px 0 25px;
+}
+
+.mlogo {
+    width: 50%;
+    height:auto;
+    cursor: pointer;
+}
+
+.searchsymbol {
+    width:10%; 
+    cursor: pointer;
+}
+
+.filters {
+    margin: 20px 0;
+    font-family: "ITC Franklin Gothic", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10%;
+}
+
+.filters svg {
+    width: 25%;
+    height: auto;
+}
+
+.filters path {
+    stroke: #202020;
+    stroke-width: 20%; 
+}
+
+.filtercategory {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.listview {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 30px 25px 30px;
+}
+
+.listitem {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 32px;
+    font-family: 'ITC Franklin Gothic LT Pro';
+    font-weight: 400;
+}
+
+.listitem p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.listitem svg {
+    width: 5%;
+    height: auto;
+}
+
+.listitem path {
+    stroke: #202020;
+    stroke-width: 20%; 
+}
+
+/*moverview classes */
+.eventcard {
+    position: relative;
+    margin: 1px 0;
+}
+
+.eventcard img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.eventdescription {
+    margin: 0 20px;
+    position: absolute;
+    bottom: 15px;
+}
+
