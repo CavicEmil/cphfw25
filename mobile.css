@@ -13,6 +13,56 @@ a, a:visited, a:hover, a:active {
     font-weight: 700;
 }
 
+.mapview {
+    margin-top:20px;
+    background: #D3BD9D;
+}
+
+/* mdetailview classes */
+.eventdetails {
+    background: #f0f0f0;
+    width: 100%;
+    min-height: 400px;
+    position:relative;
+}
+
+.cardview {
+    background: #fff;
+    position: absolute;
+    top: -40px;
+    margin: 0 20px 20px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    min-height: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.datetime {
+    font-weight: 700;
+}
+
+.adressinfo {
+    text-decoration: underline;
+}
+
+.ctabtn {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    text-align: center;
+    background-image: url('/util/BackgroundColorVelvet.png');
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
 /* meventlist classes*/
 
 .tophead {
