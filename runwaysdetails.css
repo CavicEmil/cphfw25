@@ -1,130 +1,93 @@
-.header-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 24px 0;
-  width: 100%;
+.runwayDetailSection {
+  flex-direction: column;
+  gap: 20px;
+  width: 780px;
+  height: auto;
   box-sizing: border-box;
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
   font-family: 'ITC Franclin Gothic LT Pro', sans-serif;
-  background-color: #f7f7f7;
   color: #202020;
   line-height: 1.6;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  background: white;
-  padding: 30px;
-  width: 1438px;
-  height: 890px;
-  margin: auto;
-  border-radius: 8px;
-  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* Header and text section */
 .title-section {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+  display:contents;
+  align-items: normal;
   gap: 24px;
   position: relative;
+  font-size: 40px;
+  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+  text-align: left;
 }
 
-
 .title-section h1 {
-  font-size: 96px;
+  font-size: 64px;
+  margin: 0 0 10px 0;
+  text-align: left;
   font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
-  margin-top: 20px;
-  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+.qrcode {
+  flex-shrink: 0;
+  margin-left: 20px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .qrcode-img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.qrcode-txt {
+  margin-top: 0%;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+  font-weight: 550;
+}
+
+
+.infoAndQr {
   display: flex;
-  flex: 1;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
-.qrcode-img img {
-  width: clamp(70px, 12vw, 120px);
-  height: clamp(70px, 12vw, 120px);
-  margin-left: 8px;
-  margin-right: 0;
-}
-@media (max-width: 900px) {
-  .title-section {
-    gap: 12px;
-  }
-  .qrcode-img img {
-    width: clamp(50px, 18vw, 90px);
-    height: clamp(50px, 18vw, 90px);
-  }
-}
-
-
 
 
 .text-section {
-  margin-top: -24px;
+  flex: 1;
+  padding-right: 20px;
+  font-size: 16px;
+  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
   font-size: 18px;
-  margin-bottom: 24px;
+  font-weight: 500;
+  margin-top: 0;
 }
-
-
 
 .address {
-  font-weight: bold;
-    margin-top: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 22px;
 }
 
-/* Map image */
-.map-section img {
+.map-section {
   width: 100%;
   height: auto;
   border-radius: 6px;
   object-fit: cover;
 }
 
-/* QR code */
-.qr-section {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.qr-section img {
-  width: clamp(70px, 12vw, 120px);
-  height: clamp(70px, 12vw, 120px);
-  margin-top:20px;
-}
-
-/* Responsive layout */
-@media (min-width: 768px) {
-  .container {
-    position: relative;
-  }
-
-  .qr-section {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    display: flex;
-    justify-content: flex-end;
-    width: auto;
-  }
+.map-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
