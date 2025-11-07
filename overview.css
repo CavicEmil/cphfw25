@@ -56,7 +56,7 @@ html, body {
 
 header {
     background-color: white;
-    padding: 2px 0; /* Adjust padding to make the white block thinner */
+    padding: 1px 0; /* Adjust padding to make the white block thinner */
     max-width: 100%;
     margin: 0;
 
@@ -86,16 +86,17 @@ header {
     align-self: center;
     left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 20px;
-    color: #ffffff;
+    bottom: 10px; /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
     font-weight: 400;
     font-size: 35px;
-    padding: 10px 20px;
+    /* deleted this padding: 10px 20px; */ 
     z-index: 10; /* Ensures the button is above the video */
     font-family: ITC Franklin Gothic LT Pro, sans-serif; 
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 7px;
+    background-color: #fff;
+    color: #202020;
+    padding: 24px 12px 12px 12px;
+    line-height: 2rem;
+    cursor: pointer;
     
 }
 
@@ -105,16 +106,16 @@ header {
     align-self: center;
     left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 20px;
-    color: #ffffff;
+    bottom: 10px;  /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
     font-weight: 400;
     font-size: 35px;
-    padding: 10px 20px;
     z-index: 10; /* Ensures the button is above the video */
     font-family: ITC Franklin Gothic LT Pro, sans-serif; 
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 7px;
+    background-color: #fff;
+    color: #202020;
+    padding: 24px 12px 12px 12px;
+    line-height: 2rem;
+    cursor: pointer;
     
     
 }
@@ -125,16 +126,16 @@ header {
     align-self: center;
     left: 50%;
     transform: translate(-50%);
-    bottom: 20px;
-    color: #ffffff;
+    bottom: 35px; /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
     font-weight: 400;
     font-size: 35px;
-    padding: 10px 20px;
     z-index: 10; /* Ensures the button is above the video */
     font-family: ITC Franklin Gothic LT Pro, sans-serif; 
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 7px;
+    background-color: #fff;
+    color: #202020;
+    padding: 24px 12px 12px 12px;
+    line-height: 2rem;
+    cursor: pointer;
     
 }
 
@@ -146,16 +147,16 @@ header {
     align-self: center;
     left: 50%;
     transform: translate(-50%);
-    bottom: 20px;
-    color: #ffffff;
+    bottom: 35px; /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
     font-weight: 400;
     font-size: 35px;
-    padding: 10px 20px;
     z-index: 10; /* Ensures the button is above the video */
     font-family: ITC Franklin Gothic LT Pro, sans-serif; 
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 7px;
+    background-color: #fff;
+    color: #202020;
+    padding: 24px 12px 12px 12px;
+    line-height: 2rem;
+    cursor: pointer;
     
 }
 
