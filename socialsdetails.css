@@ -1,0 +1,135 @@
+.socialsdetails-mediacontent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.socialsdetails-body{
+  font-family:' ITC Franklin Gothic LT Pro', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ min-height:100vh;
+ padding: 20px;
+}
+
+.socialsdetails-container{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 1438px;
+  height: 890px;
+  margin: auto;
+  border-radius: 8px;
+  padding: 30px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+
+.socialsdetails-leftsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+font-size: 18px;
+  flex: 2;
+}
+
+.socialsdetails-textcontent h1 {
+  font-size: 96px;
+  font-family: 'Helvetica Neue LT Pro', sans-serif;
+  margin-bottom: 15px;
+}
+
+.socialsdetails-textcontent p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family:'ITC Franklin Gothic LT Pro', sans-serif;
+  font-size: 18px;
+}
+
+.socialsdetails-address{
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+}
+
+.socialsdetails-map img{
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 0px;
+}
+
+
+.socialsdetails-rightsection {
+  display: flex;
+  flex-direction: column;    
+  align-items: flex-end;    
+  justify-content: flex-start; 
+  flex: 1;
+  gap: 16px;               
+  padding-top: 20px;        
+  padding-right: 20px;    
+}
+
+
+.socialsdetails-qrcode-section img {
+  width: clamp(70px, 12vw, 120px);
+  height: clamp(70px, 12vw, 120px);
+  display: block;
+  align-items: center;
+}
+
+.socialsdetails-qrtext {
+  font-size: 0.8rem;
+  color: #202020;
+  text-align: right;   
+  margin-top: 4px;
+  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+}
+
+.socialsdetails-video-section video {
+  width: 340px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+  position:absolute;
+  top:200px;
+  right:100px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .socialsdetails-container{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .socialsdetails-rightsection{
+    width: 100%;
+  }
+
+  .socialsdetails-video-section{
+    width: 90%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  .socialsdetails-qrcode-section{
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
