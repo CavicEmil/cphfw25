@@ -86,8 +86,32 @@
   object-fit: cover;
 }
 
-.map-section img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
+/* QR code */
+.qr-section {
+  display: flex;
+  justify-content: flex-end;
 }
+
+.qr-section img {
+  width: clamp(70px, 12vw, 120px);
+  height: clamp(70px, 12vw, 120px);
+  margin-top:20px;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+  }
+
+  .qr-section {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+  }
+}
+
+
