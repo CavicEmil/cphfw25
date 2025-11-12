@@ -11,7 +11,8 @@
   top: -700px;
   margin: 10px auto 0;
   position: relative;
-  right: -100px;
+  right: -0px;
+  display: flex;
 }
 
 /* Header and text section */
@@ -119,4 +120,18 @@
   }
 }
 
+.mp4RunwayVideo {
+  flex-shrink: 0;
+  position: relative;
+  top: -820px;
+  left: 820px;
+}
 
+.mp4RunwayVideo video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  max-height: 780px;
+  object-fit: cover;;
+  padding: 10px;
+}
