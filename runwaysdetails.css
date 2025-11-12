@@ -8,8 +8,10 @@
   color: #202020;
   line-height: 1.6;
   padding: 20px;
-  top: 0px;
+  top: -700px;
   margin: 10px auto 0;
+  position: relative;
+  right: -100px;
 }
 
 /* Header and text section */
@@ -82,9 +84,11 @@
 
 .map-section {
   width: 100%;
+  max-width: 740px;
   height: auto;
   border-radius: 6px;
   object-fit: cover;
+  overflow: hidden;
 }
 
 /* QR code */
