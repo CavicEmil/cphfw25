@@ -1,0 +1,255 @@
+
+
+/* top and bottom row that has 2 videos 2 buttons in it */
+
+.toprow {  /* this is the top row style */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+/* this is video style for bottom row */
+.bottomrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* this is the styling for the header part
+
+/* LEFT LOGO CPHFW */
+.logo {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* This is for the thext on the right side */
+
+.headertxt {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    text-align: right;
+    margin-right: 20px;
+    padding: 0;
+}
+
+/* this changes the header text box */
+
+header {
+    background-color: white;
+    padding: 1px 0; /* Adjust padding to make the white block thinner */
+    max-width: 100%;
+    margin: 0;
+
+}
+
+/* This is for the whole header logo, text and all */
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px; /* Optional padding for left and right */;
+    box-sizing: border-box;
+
+}
+
+/* buttons from now on */
+
+
+.runwaybtn {
+
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 10px; /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
+    font-weight: 400;
+    font-size: 35px;
+    z-index: 10; /* Ensures the button is above the video */
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    background-color: #fff;
+    color: #202020;
+    padding: 24px 12px 12px 12px;
+    line-height: 2rem;
+    cursor: pointer;
+    
+}
+
+.socialsbtn {
+
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 10px;  /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
+    font-weight: 400;
+    font-size: 35px;
+    z-index: 10; /* Ensures the button is above the video */
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    background-color: #fff;
+    color: #202020;
+    padding: 24px 12px 12px 12px;
+    line-height: 2rem;
+    cursor: pointer;
+    
+    
+}
+
+.boutiquesbtn {
+
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 35px; /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
+    font-weight: 400;
+    font-size: 35px;
+    z-index: 10; /* Ensures the button is above the video */
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    background-color: #fff;
+    color: #202020;
+    padding: 24px 12px 12px 12px;
+    line-height: 2rem;
+    cursor: pointer;
+    
+}
+
+
+
+.publicviewingbtn {
+
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 35px; /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
+    font-weight: 400;
+    font-size: 35px;
+    z-index: 10; /* Ensures the button is above the video */
+    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    background-color: #fff;
+    color: #202020;
+    padding: 24px 12px 12px 12px;
+    line-height: 2rem;
+    cursor: pointer;
+    
+}
+
+
+/* this is a section for combined button and video, each viedo and button has it's own section like
+ this but their class is the same so you only need to make changes in one place which is here...*/
+
+.videoandbtn {
+
+    position: relative;
+    flex: 1;
+    max-width: 50%; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 450px; 
+}
+
+
+/* video part and style */
+
+.videorunway { /* made this section for the runway video only*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.videosocials { /* made this section for the socials video only*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.videoboutiques { /* made this section for the boutiques video only*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.videopublicviewings { /* made this section for the public viewings video only*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* this is for a general section video. Each video has a Tag <video> so that is what this style is for */
+video {
+    display: block;
+    flex: 1 1 50%;
+    max-width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+}
+
+
+
+.videoandbtn video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+  opacity: 0;          /* invisible by default; becomes 1 when active */
+  visibility: hidden;  /* hide when not active to avoid poster removal issues */
+}
+
+/* Active video (visible and playing) */
+.videoandbtn.active video {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Inactive video (hidden, poster visible) */
+.videoandbtn.paused video {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/* this is a section for the poster images, images that show while the video is playing and other videos are paused */
+
+.posterimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease; 
+  z-index: 2;
+  filter: grayscale(100%) brightness(60%); /* Grey tint */
+}
