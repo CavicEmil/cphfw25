@@ -152,7 +152,10 @@ body {
   transform: scale(1.05);
 }
 .header-center a.nav-item[href="#runways"],
-.header-center a.nav-item[href="#boutiques"] {
+.header-center a.nav-item[href="#boutiques"],
+.header-center a.nav-item[href="runwaysdetails.html"],
+.header-center a.nav-item[href="boutiquesdetails.html"]
+ {
   flex-direction: row-reverse;
   gap: 12px;
 }
