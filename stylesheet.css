@@ -1,3 +1,8 @@
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .black {
     color: #202020;
 }
@@ -54,7 +59,6 @@ body {
     font-weight: 400;
 } 
 
-/* and so on...*/
 .header {
   width: 100%;
   position: relative;
@@ -75,11 +79,15 @@ body {
   }
 }
 
-/* LEFT LOGO */
+.header-left {
+    margin-left: 30px;
+    height: 55px;
+    width: 477px;
+}
+
 .logo {
-  max-height: clamp(48px, 8vw, 80px);
-  width: auto;
-  object-fit: contain;
+  height: 55px;
+  width: 410px;
 }
 
 
@@ -94,6 +102,7 @@ body {
   min-width: 0;
   margin: 0 auto;
 }
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -116,20 +125,22 @@ body {
   align-items: center;
   text-decoration: none;
   color: #000;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight: 600;
-  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  font-family: 'ITC Franklin Gothic', sans-serif;
+  font-weight: 380;
+  font-size: 25px;
   gap: 10px;
   transition: transform 0.3s ease;
+  letter-spacing: 1px;
 }
 
 .nav-item img {
-  width: clamp(36px, 7vw, 60px);
-  height: clamp(36px, 7vw, 60px);
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
 }
+
 
 .nav-item:hover {
   transform: scale(1.05);
@@ -143,20 +154,21 @@ body {
 
 .header-right p {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: 30px;
   font-weight: 600;
   margin: 0;
   white-space: nowrap;
   color: #202020
 }
 
-
+/* 
 @media (min-width: 600px) {
   .header-left .logo,
   .header-right {
+
     transform: translateY(-36px);
   }
-}
+} */
 
 
 @media (max-width: 900px) {
@@ -174,9 +186,5 @@ body {
   .nav-item {
     flex-direction: column;
     gap: 6px;
-  }
-
-  .logo {
-    max-height: 60px;
   }
 }
