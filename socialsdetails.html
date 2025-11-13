@@ -6,8 +6,7 @@
   <title>CPHFW25</title>
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="listColumn.css">
-  <link rel="stylesheet" href="socialsdetails.css">
-  <link rel="stylesheet" href="listt.css">
+  <link rel="stylesheet" href="runwaysdetails.css">
 </head>
 
 
@@ -139,48 +138,64 @@
 
   </div>
 
-<main>
-    <!-- HERE GOES MAIN CONTENT: List, Detailspage,...-->
-     <div class="socialsdetails-container">
-        <div class="socialsdetails-leftsection">
-      <div class="socialsdetails-textcontent">
-        <h1>Ralph Lauren AW26 Social Event</h1>
+
+
+
+
+
+<main class="runwayDetailSection">
+        
+    <div class="title-section">
+        <h1>Ralph Lauren social event</h1>
+    </div>
+    
+    <div class="infoAndQr">
+      <div class="text-section">
         <p>
-          Join us for an elegant evening in celebration of Copenhagen Fashion Week (CPHFW).<br><br>
-          We invite you to unwind and connect in a stylish atmosphere where fashion, creativity, and good company come together.
+          Ralph Lauren’s exclusive social event celebrates timeless elegance and contemporary sophistication. Set against a backdrop of classic décor and soft ambient lighting, the evening brings together designers, influencers, and fashion enthusiasts to experience the essence of the Ralph Lauren lifestyle. Guests are invited to enjoy signature cocktails, curated music, and an intimate presentation of the latest collection — a harmonious blend of refined tailoring and effortless charm.
         </p>
-        <p>
-          Enjoy curated highlights from CPHFW, showcasing the latest trends in Nordic design, sustainability, and innovation.
-          This event offers the perfect opportunity to network, share inspiration, and experience the unique spirit of Scandinavian fashion.
-        </p>
-        <p class="socialsdetails-address">
-          Vesterbrogade 72B, 1620 København<br>
-          Jan 27 – 19:00
+        
+        <p class="address">
+          <img src="util/locationPin.png" id="locationPin"> Lille Kongensgade 16A, 1074 Copenhagen<br>
+          <img src="util/calendarTing.png" id="calendarTing"> 13.00 - 15.00
         </p>
       </div>
-
-      <div class="socialsdetails-map">
-        <img src="util/runwaysmap.png"Map showing Vesterbrogade 72B, Copenhagen">
+      <div class="qrcode">
+        <img src="util/randomqr-256 1.png" alt="QR Code">
+        <p class="qrcode-txt">SCAN TO LEARN MORE</p>
       </div>
     </div>
 
-    <div class="socialsdetails-rightsection">
-      <div class="socialsdetails-mediacontent">
-        <div class="socialsdetails-qrcode-section">
-          <img src="util/randomqr-256 1.png" alt="QR Code">
-          <p class="socialsdetails-qrtext">SCAN TO LEARN MORE</p>
-        </div>
-        <div class="socialsdetails-video-section">
-          <video loop autoplay muted>
-            <source src="util/socialsvideo.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
+    <div class="map-section">
+      <img src="util/runwaysmap.png" alt="Map showing de 16A, Copenhagen">
     </div>
-  </div>
-  </main>
 
-  <script>
+
+  <div class="mp4RunwayVideo"> <video autoplay loop muted> <source src="util/socialsvideo.mp4" type="video/mp4" class="runwayModelVid"> </video> </div>
+  
+
+
+
+
+  
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<script>
 
 
  //This is for the dropdown menus
@@ -230,9 +245,6 @@ document.querySelectorAll('.eventOptionsLine').forEach(line => {
 });
 
 </script>
-
-
-
 
 </body>
 </html>

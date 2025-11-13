@@ -188,3 +188,10 @@ body {
     gap: 6px;
   }
 }
+
+/* Greyscale effect for header nav circle images */
+.header-center .nav-item img[alt="Runways"],
+.header-center .nav-item img[alt="Boutiques"],
+.header-center .nav-item img[alt="Public Viewing"] {
+  filter: grayscale(100%);
+}
