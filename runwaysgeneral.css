@@ -1,0 +1,27 @@
+.video-container {
+    position:relative;
+}
+
+.livelabelwrap {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.livelabel {
+    position:absolute;
+    top: 25px;
+    left: 25px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.dot {
+    transform: translateY(50%);
+    border-radius: 100px;
+    width:10px;
+    height: 10px;
+    background-color: #202020;
+}

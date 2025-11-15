@@ -1,0 +1,20 @@
+In order of decreasing priority:
+0. adjust existing pages according to feedback
+    to bring design up to date 
+    
+    feedback:
+    feature to see what events are happening now
+    back buttons & search bar
+    calendar overview/filters today, tomorrow
+    make pages look unique
+    
+
+1. add pages:
+    1.runways general page
+    2. runways livestream
+    3. socials general
+    4. boutiques detail
+    5. boutiques near me
+    6. boutiques overview
+    7. public viewings general
+    8. public viewings detail

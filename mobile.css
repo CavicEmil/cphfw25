@@ -79,6 +79,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .mlogo {
+    margin: 25px;
     width: 50%;
     height:auto;
     cursor: pointer;

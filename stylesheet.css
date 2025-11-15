@@ -191,3 +191,21 @@ body {
   }
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  margin:0;
+}
+
+.navcolumn {
+  display: flex;
+  margin: 75px 0;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contentcontainer {
+  margin:25px 0 0 100px;
+  display: flex;
+  flex-direction: column;
+}
