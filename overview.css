@@ -45,7 +45,7 @@ html, body {
 .headertxt {
     font-size: 40px;
     font-weight: normal;
-    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    font-family: 'franklin-gothic', sans-serif;
     text-align: right;
     margin-right: 20px;
     padding: 0;
@@ -89,7 +89,7 @@ header {
     font-weight: 400;
     font-size: 35px;
     z-index: 10; /* Ensures the button is above the video */
-    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    font-family: 'franklin-gothic', sans-serif;
     background-color: #fff;
     color: #202020;
     padding: 24px 12px 12px 12px;
@@ -108,7 +108,7 @@ header {
     font-weight: 400;
     font-size: 35px;
     z-index: 10; /* Ensures the button is above the video */
-    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    font-family: 'franklin-gothic', sans-serif;
     background-color: #fff;
     color: #202020;
     padding: 24px 12px 12px 12px;
@@ -128,7 +128,7 @@ header {
     font-weight: 400;
     font-size: 35px;
     z-index: 10; /* Ensures the button is above the video */
-    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    font-family: 'franklin-gothic', sans-serif;
     background-color: #fff;
     color: #202020;
     padding: 24px 12px 12px 12px;
@@ -149,7 +149,7 @@ header {
     font-weight: 400;
     font-size: 35px;
     z-index: 10; /* Ensures the button is above the video */
-    font-family: ITC Franklin Gothic LT Pro, sans-serif; 
+    font-family: 'franklin-gothic', sans-serif;; 
     background-color: #fff;
     color: #202020;
     padding: 24px 12px 12px 12px;

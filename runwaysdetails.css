@@ -24,7 +24,7 @@
   gap: 24px;
   position: relative;
   font-size: 40px;
-  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
   text-align: left;
 }
 
@@ -32,7 +32,7 @@
   font-size: 64px;
   margin: 0 0 10px 0;
   text-align: left;
-  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
   font-weight: 600;
 }
 
@@ -54,7 +54,7 @@
   margin-top: 0%;
   font-size: 12px;
   text-align: center;
-  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
   font-weight: 550;
 }
 
@@ -73,7 +73,7 @@
   flex: 1;
   padding-right: 20px;
   font-size: 16px;
-  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-top: 0;

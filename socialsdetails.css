@@ -11,7 +11,7 @@
 }
 
 .socialsdetails-body{
-  font-family:' ITC Franklin Gothic LT Pro', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
@@ -45,21 +45,21 @@ font-size: 18px;
 
 .socialsdetails-textcontent h1 {
   font-size: 96px;
-  font-family: 'Helvetica Neue LT Pro', sans-serif;
+  font-family: 'helvetica-neue-lt-pro', sans-serif;
   margin-bottom: 15px;
 }
 
 .socialsdetails-textcontent p {
   margin-bottom: 10px;
   line-height: 1.5;
-  font-family:'ITC Franklin Gothic LT Pro', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
   font-size: 18px;
 }
 
 .socialsdetails-address{
   font-weight: bold;
   margin-top: 10px;
-  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
 }
 
 .socialsdetails-map img{
@@ -94,7 +94,7 @@ font-size: 18px;
   color: #202020;
   text-align: right;   
   margin-top: 4px;
-  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
 }
 
 .socialsdetails-video-section video {

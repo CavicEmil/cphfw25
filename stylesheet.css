@@ -1,3 +1,6 @@
+@import url('https://use.typekit.net/kzz6pxh.css');
+
+
 a, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
@@ -38,7 +41,7 @@ a, a:visited, a:hover, a:active {
 
 
 .headertxt {
-     font-family: 'Helvetica neue LT Pro', sans-serif;
+     font-family: 'helvetica-neue-lt-pro', sans-serif;
      font-weight: bold;
      font-size: 96px;
 }
@@ -49,13 +52,13 @@ body {
 }
 
 .subheadertxt {
-    font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+    font-family: 'franklin-gothic', sans-serif;
     font-weight: 700;
     font-size: 48px;
 }
 
 .bodytxt {
-    font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+    font-family: 'franklin-gothic', sans-serif;
     font-weight: 200;
     font-size: 18px;
 }
@@ -131,7 +134,7 @@ body {
   align-items: center;
   text-decoration: none;
   color: #000;
-  font-family: 'ITC Franklin Gothic', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
   font-weight: 380;
   font-size: 25px;
   gap: 10px;
@@ -162,23 +165,13 @@ body {
 
 
 .header-right p {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'helvetica-neue-lt-pro', sans-serif;
   font-size: 30px;
   font-weight: 600;
   margin: 0;
   white-space: nowrap;
   color: #202020
 }
-
-/* 
-@media (min-width: 600px) {
-  .header-left .logo,
-  .header-right {
-
-    transform: translateY(-36px);
-  }
-} */
-
 
 @media (max-width: 900px) {
   .header {

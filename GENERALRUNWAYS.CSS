@@ -1,6 +1,8 @@
+@import url('https://use.typekit.net/kzz6pxh.css');
+
 body {
   margin: 0;
-  font-family: "helvetica neue", sans-serif;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
   background-color: #fff;
   color: #202020;
   display: flex;
@@ -22,7 +24,7 @@ body {
   align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
-  font-family: 'ITC Franklin Gothic LT Pro', sans-serif;
+  font-family: 'franklin-gothic', sans-serif;
 }
 
 /* Left side - text */

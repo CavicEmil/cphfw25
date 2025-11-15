@@ -9,7 +9,7 @@ a, a:visited, a:hover, a:active {
 
 .subheader {
     font-size: 32px;
-    font-family: 'ITC Franklin Gothic LT Pro';
+    font-family: 'franklin-gothic', sans-serif;
     font-weight: 700;
 }
 
@@ -85,7 +85,7 @@ a, a:visited, a:hover, a:active {
 
 .filters {
     margin: 20px 0;
-    font-family: "ITC Franklin Gothic", sans-serif;
+    font-family: 'franklin-gothic', sans-serif;
     font-weight: 700;
     font-size: 20px;
     width: 100%;
@@ -126,7 +126,7 @@ a, a:visited, a:hover, a:active {
     flex-direction: row;
     justify-content: flex-start;
     font-size: 32px;
-    font-family: 'ITC Franklin Gothic LT Pro';
+    font-family: 'franklin-gothic', sans-serif;
     font-weight: 400;
 }
 

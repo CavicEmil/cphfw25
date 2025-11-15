@@ -1,3 +1,5 @@
+@import url('https://use.typekit.net/kzz6pxh.css');
+
 body {
     margin:0;
 }
@@ -33,11 +35,11 @@ a, a:visited, a:hover, a:active {
     transform:translateX(-50%);
     bottom: 20%;
     font-size: 40px;
-    font-family: 'ITC Franklin Gothic LT Pro';
+    font-family: 'franklin-gothic', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     background-color: #fff;
     color: #202020;
-    padding: 24px 12px 12px 12px;
+    padding: 12px 12px 12px 12px;
     cursor: pointer;
 }

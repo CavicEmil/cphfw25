@@ -1,5 +1,5 @@
 .dateFilter, .nameFilter, .brandFilter {
-    font-family: 'ITC Franklin Gothic', sans-serif;
+    font-family: 'franklin-gothic', sans-serif;
     font-weight: 450;
     font-size: 24px;
     line-height: 100%;
@@ -46,7 +46,7 @@
     left: 50%;
     transform: translateX(-50%);
     border: 1.5px solid rgba(0, 0, 0, 1);
-    font-family: 'ITC Franklin Gothic', sans-serif;
+    font-family: 'franklin-gothic', sans-serif;
 }
 
 .dropdownOption {
@@ -75,7 +75,7 @@
 }
 
 .eventOptions {
-    font-family: 'ITC Franklin Gothic', sans-serif;
+    font-family: 'franklin-gothic', sans-serif;
     width: 100%;
     margin: 0 auto;
     border-radius: 4px;
