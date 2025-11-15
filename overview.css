@@ -79,7 +79,7 @@ header {
 /* buttons from now on */
 
 
-.runwaybtn {
+.bigbtn {
 
     position: absolute;
     align-self: center;
@@ -92,75 +92,12 @@ header {
     font-family: 'franklin-gothic', sans-serif;
     background-color: #fff;
     color: #202020;
-    padding: 24px 12px 12px 12px;
+    padding: 12px 12px 12px 12px;
     line-height: 2rem;
     cursor: pointer;
     
 }
 
-.socialsbtn {
-
-    position: absolute;
-    align-self: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 10px;  /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
-    font-weight: 400;
-    font-size: 35px;
-    z-index: 10; /* Ensures the button is above the video */
-    font-family: 'franklin-gothic', sans-serif;
-    background-color: #fff;
-    color: #202020;
-    padding: 24px 12px 12px 12px;
-    line-height: 2rem;
-    cursor: pointer;
-    
-    
-}
-
-.boutiquesbtn {
-
-    position: absolute;
-    align-self: center;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 35px; /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
-    font-weight: 400;
-    font-size: 35px;
-    z-index: 10; /* Ensures the button is above the video */
-    font-family: 'franklin-gothic', sans-serif;
-    background-color: #fff;
-    color: #202020;
-    padding: 24px 12px 12px 12px;
-    line-height: 2rem;
-    cursor: pointer;
-    
-}
-
-
-
-.publicviewingbtn {
-
-    position: absolute;
-    align-self: center;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 35px; /* for some reson 10px for top videos and 40 px for bottoms looks better or correct, cant explain it */
-    font-weight: 400;
-    font-size: 35px;
-    z-index: 10; /* Ensures the button is above the video */
-    font-family: 'franklin-gothic', sans-serif;; 
-    background-color: #fff;
-    color: #202020;
-    padding: 24px 12px 12px 12px;
-    line-height: 2rem;
-    cursor: pointer;
-    
-}
-
-
-/* this is a section for combined button and video, each viedo and button has it's own section like
- this but their class is the same so you only need to make changes in one place which is here...*/
 
 .videoandbtn {
 

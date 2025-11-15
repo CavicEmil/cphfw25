@@ -15,7 +15,13 @@ a, a:visited, a:hover, a:active {
 
 .mapview {
     margin-top:20px;
-    background: #D3BD9D;
+    width: 100vw;
+    height: 80vh;
+}
+
+.mapview iframe {
+    width: 100%;
+    height: 100%;
 }
 
 /* mdetailview classes */
@@ -149,14 +155,15 @@ a, a:visited, a:hover, a:active {
 /*moverview classes */
 .eventcard {
     position: relative;
-    margin: 1px 0;
+    /* margin: 1px 0; */
 }
 
 .eventcard img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    /* no border radious based off of testing feedback */
+    /* border-radius: 20px; */
 }
 
 .eventdescription {
